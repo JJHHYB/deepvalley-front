@@ -18,7 +18,9 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('%VITE_API_URL%/service-worker.js');
+          navigator.serviceWorker.register(
+            '%VITE_FRONTEND_URL%/service-worker.js',
+          );
         });
       }
     </script>

@@ -39,7 +39,7 @@ import config from './config/index.tsx';
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register(`${config.API_URL}/service-worker.js`)
+      .register(`${config.FRONTEND_URL}/service-worker.js`)
       .then((registration) => {
         console.log(
           'Service Worker registered with scope:',
