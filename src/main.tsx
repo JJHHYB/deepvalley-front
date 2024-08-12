@@ -34,6 +34,21 @@ import {
 import ErrorBoundary from './components/Common/ErrorBoundary/index.tsx';
 import { IDFind, PasswordFind } from './pages/Auth/index.tsx';
 import SuggestPage from './pages/SuggestPage/index.tsx';
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')
+      .then((registration) => {
+        console.log(
+          'Service Worker registered with scope:',
+          registration.scope,
+        );
+      })
+      .catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
