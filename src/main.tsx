@@ -37,7 +37,7 @@ import SuggestPage from './pages/SuggestPage/index.tsx';
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/service-worker.js')
+      .register('./service-worker.js')
       .then((registration) => {
         console.log(
           'Service Worker registered with scope:',
