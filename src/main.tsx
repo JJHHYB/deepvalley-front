@@ -35,6 +35,7 @@ import ErrorBoundary from './components/Common/ErrorBoundary/index.tsx';
 import { IDFind, PasswordFind } from './pages/Auth/index.tsx';
 import SuggestPage from './pages/SuggestPage/index.tsx';
 
+
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
   //EX: loader, errorElement 예시
