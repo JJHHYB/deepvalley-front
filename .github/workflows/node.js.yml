@@ -31,6 +31,9 @@ jobs:
           echo "VITE_KAKAO_REST_API_KEY=${{ secrets.VITE_KAKAO_REST_API_KEY }}" >> .env
           echo "VITE_KAKAO_REDIRECT_URL=${{ secrets.VITE_KAKAO_REDIRECT_URL }}" >> .env
           echo "VITE_KAKAOMAP_KEY=${{ secrets.VITE_KAKAOMAP_KEY }}" >> .env
+          echo "VITE_WEATHER_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
+          echo "VITE_FRONTEND_URL=${{ secrets.VITE_FRONTEND_URL }}" >> .env
+
           npm run build --if-present
 
       - name: Sync to S3
