@@ -1,9 +1,9 @@
-const CACHE_NAME = 'cache-v5';
+const CACHE_NAME = 'cache-v7';
 
 const FILES_TO_CACHE = [
-  '/offline.html',
-  './src/assets/images/favicon.ico',
-  './src/assets/images/Logo.png',
+  './offline.html',
+  '/src/assets/images/favicon.ico',
+  '/src/assets/images/Logo.png',
 ];
 
 self.addEventListener('install', (event) => {
